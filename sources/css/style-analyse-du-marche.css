@@ -1,0 +1,9 @@
+article img{
+    float: none;
+    height: 600px;
+    width: 750px;;
+}
+
+article ul {
+    text-align: left;
+}

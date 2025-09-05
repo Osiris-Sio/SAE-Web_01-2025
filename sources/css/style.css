@@ -1,0 +1,324 @@
+/* Application de la Charte Graphique : */
+
+.hamburger,.hamburger input, .hamburger svg, .line, .line-top-bottom, .footerb{
+    display: none;
+}
+
+body {
+    font-family: "Almarai";
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    line-height: 160%;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Anton";
+    font-weight: normal;
+    font-size: 64px;
+    margin: 0px;
+    padding: 20px;
+}
+
+h2 {
+    font-family: "Cute Font";
+    font-weight: normal;
+    font-size: 64px;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+h3 {
+    font-family: "Alexandria";
+    font-weight: normal;
+    font-size: 32px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.bouton {
+    display: inline-block; /* Blocs qui se suivent en ligne. Cela permet de définir explicitement les dimensions des boutons rouges*/
+    font-size: 48px;
+    font-family: "Cute Font";
+    color: #FFF;
+    background-color: #CE1126;
+    text-decoration: none; /* Aucun surlignage */
+    width: 300px; /* Largeur fixe */
+    height: 40px; /* Hauteur fixe */
+    padding: 10px 20px; /* Ajuste l'espacement intérieur et donc l'espace entre le texte et le fond rouge verticalement*/
+    padding-top: 20px;
+    margin: 0px 30px;
+    border-radius: 40px; /* Arrondi le fond et donc le bouton */
+    text-align: center;
+}
+
+.bouton:hover {
+    cursor: pointer;
+    box-shadow: 10px 5px 20px black; /* horizontal vertical opacité*/
+    transform: scale(1.1); /* Augmente légèrement la taille */
+    transition: transform 0.2s ease-in-out;
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    color: #CE1126;
+}
+
+/* En-tête / Header */
+
+header{
+    background-color: #002654;
+    padding: 15px; /* Aucun élément ne touche le bord de l'écran */
+}
+
+header img {
+    width: 300px; /* Redimensionne le logo (largeur et hauteur) */
+    height: 250px;
+}
+
+header h1 {
+    color: #FFF;
+    margin: 0px; /* Aucun espace extérieur au titre 1 */
+}
+
+#menu {
+    color: #fff;
+    background-color: #002654;
+    text-align: center;
+    padding: 10px;
+}
+
+#menu ul {
+    padding: 0px; /* Aucun espace en plus de la liste (intérieur et extérieur) */ 
+    margin: 0px;
+}
+
+#menu li{
+    display: inline-block; /* Blocs qui se suivent en ligne */
+    margin: 50px 0px; /* Un espace de 50px entre chaque puce/bouton */
+}
+
+#menu a:hover{
+    
+}
+
+/* Article */
+
+article .icone {
+    width: 70px;
+    height: auto;
+    float:unset;
+}
+
+.div_nom_page
+  {
+	display: flex;
+  	justify-content: center; /* Centre horizontalement */
+  }
+  
+.div_contenu {
+	display: flex;
+	align-items: center;
+  }
+
+.div_contenu img {
+    margin-bottom: 30px;
+}
+
+article {
+    padding: 50px; /* Aucun élément ne touche le bord de l'écran */
+}
+
+article div {
+    clear: both; /* Empêche les flottants (comme les images suivantes) de sortir des limites du div */
+}
+
+article img {
+    padding: 30px 50px 0px 0px;
+    margin-bottom: 50px;
+    float: left;
+    width: 450px;
+    height: 450px;
+    clear: both;
+}
+
+article h3 {
+    padding-top: 30px;
+}
+
+article p {
+    padding-top: 0px;
+    text-align: justify;
+}
+
+article a:hover{
+    cursor: pointer;
+    color: #002654;
+}
+
+article ul{
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Pied de Page / Footer */
+
+footer {
+    background-color: #002654;
+    clear: both; /* Empêche les flottants de sortir des limites */
+    padding: 50px 0; /* Espacement vertical */
+    display: flex; /* Active Flexbox */
+    flex-direction: line; /* Aligne les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    text-align: center; /* Centre le texte à l'intérieur des éléments */
+    gap: 200px; /* Espacement entre les éléments */
+}
+
+footer img {
+    width: auto; /* Garde la largeur automatique */
+    max-width: 15%; /* Évite que l'image dépasse la largeur de l'écran */
+}
+
+footer a {
+    color: #fff;
+    font-size: 20px;
+}
+
+footer a:hover{
+    cursor: pointer;
+}
+
+/* Flèche pour retourner en haut de la page */
+
+#fleche {
+    position: fixed;
+    bottom: 10px; /* décalage en bas */
+    right: 10px; /* décalage à droite */
+    width: 40px;
+    height: 40px;
+    border-radius: 40px; /* Arrondi */
+    box-shadow: 0 4px 10px #000; /* Petite ombre */
+}
+
+#fleche:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 20px #000; /* Ombre plus marquée au survol */
+    transform: scale(1.1); /* Augmente légèrement la taille (le 1.1)*/
+    transition: transform 0.2s ease-in-out; /* Ajoute une transition pour l'ombre */
+}
+
+@media only screen 
+and (max-device-width : 490px)
+and (min-device-width : 290px)
+and (max-device-height : 944px)
+and (min-device-height : 744px)
+/* Pour un Iphone 12, 13 ou 14 entre 744px et 944px de hauteur et entre 290px et 490px de largeur en mode portrait*/
+
+{
+    .hamburger {
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        font-size: 32px;
+    }
+
+    .hamburger input {
+        opacity: 0;
+        display: flex;
+        }
+
+    .hamburger svg {
+        margin: 50px;
+        background-color: #CE1126;
+        border-radius: 25px;
+        height: 3em;
+        /* Gère la transition du svg */
+        transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line {
+        fill: none;
+        stroke: white;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3;
+        /* Gère la transition du Stroke */
+        transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+                    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .line-top-bottom {
+        stroke-dasharray: 12 63;
+    }
+
+    .hamburger input:checked + svg {
+        transform: rotate(-45deg);
+    }
+    
+    .hamburger input:checked + svg .line-top-bottom {
+        stroke-dasharray: 20 300;
+        stroke-dashoffset: -32.42;
+    }
+    
+    .hamburger, .hamburger svg, .line, .line-top-bottom,.hamburger input,.hamburger input:checked + svg,.responsive p,.footerb, .line-top-bottom, .hamburger input:checked + svg{
+        display : block;
+    }
+    #menu,.hamburger ul,footer{
+        display: none;
+    }
+
+    .hamburger ul {
+        padding: 0px; /* Aucun espace en plus de la liste (intérieur et extérieur) */ 
+        margin: 0px;
+        display: block;         /* Toujours en block pour la transition */
+        opacity: 0;             /* Rendre invisible au départ */
+        max-height: 0;          /* Limiter la hauteur à 0 au départ */
+        overflow: hidden;       /* Empêcher le contenu de dépasser */
+        transition: opacity 0.5s ease, max-height 0.5s ease; /* Transition fluide */
+    }
+
+    .hamburger li{
+        display: block; /* Blocs qui se suivent en ligne */
+        margin: 50px 0px; /* Un espace de 50px entre chaque puce/bouton */
+    }
+
+    .hamburger a {
+        display: inline-block; /* Blocs qui se suivent en ligne. Cela permet de définir explicitement les dimensions des boutons rouges*/
+        color: #FFF;
+        background-color: #CE1126;
+        text-decoration: none; /* Aucun surlignage */
+        width: 300px; /* Largeur fixe */
+        height: 40px; /* Hauteur fixe */
+        padding: 10px 20px; /* Ajuste l'espacement intérieur et donc l'espace entre le texte et le fond rouge verticalement*/
+        margin: 0px 30px;
+        border-radius: 40px; /* Arrondi le fond et donc le bouton */
+        text-align: center;
+    }
+
+    .hamburger input:checked ~ ul {
+        display: block;
+        opacity: 1;             /* Rendre visible */
+        max-height: 500px;      /* Définir une hauteur suffisante */
+    }
+
+    .responsive p{
+        font-size: 32px;
+    }
+
+    .responsive ul{
+        font-size: 32px;
+    }
+
+    .footerb{
+        display: inline-block;
+    }
+}
